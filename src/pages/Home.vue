@@ -55,6 +55,7 @@ onMounted(async () => {
     font-size: 8rem;
     margin-bottom: 10px;
     color: rgb(var(--clr-accent));
+    font-weight: var(--fw-bold);
     background: linear-gradient(to right, rgb(var(--clr-accent)), rgb(var(--clr-light)));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -64,6 +65,7 @@ onMounted(async () => {
 {
     margin-bottom: 20px;
     color: rgb(var(--clr-warning));
+    font-weight: var(--fw-medium);
 }
 
 .home .home-container .hero .gem-img 
@@ -114,4 +116,12 @@ onMounted(async () => {
     }
 }
 
+
+@media (max-width: 480px)
+{
+    .home .home-container .hero .hero-title
+    {
+        font-size: 4rem;
+    }
+}
 </style>

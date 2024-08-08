@@ -20,11 +20,10 @@ onUnmounted(() => {
 <template>
     <nav :class="['nav', [navActive ? 'nav-active' : '']]">
         <div class="nav-container container">
-            <a class="nav-logo" href="">CCC&#10003;</a>
+            <RouterLink class="nav-logo" :to="{name: 'Home'}">CCC&#10003;</RouterLink>
             <ul class="nav-list">
                 <RouterLink class="nav-item" :to="{name: 'Home'}">Home</RouterLink>
                 <RouterLink class="nav-item" :to="{name: 'About'}">About</RouterLink>
-                <li class="nav-item"><a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko API</a></li>
             </ul>
         </div>
     </nav>
@@ -69,7 +68,7 @@ onUnmounted(() => {
 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     color: rgb(var(--clr-light));
 }
 

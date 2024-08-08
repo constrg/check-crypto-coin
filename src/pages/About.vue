@@ -36,6 +36,7 @@ import ScrollToTopButton from '../components/ScrollToTopButton.vue';
     font-size: 6rem;
     margin-bottom: 20px;
     color: rgb(var(--clr-accent));
+    font-weight: var(--fw-bold);
     background: linear-gradient(to right, rgb(var(--clr-accent)), rgb(var(--clr-light)));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -70,6 +71,14 @@ import ScrollToTopButton from '../components/ScrollToTopButton.vue';
     font-weight: var(--fw-medium);
     margin-bottom: 20px;
 
+}
+
+@media (max-width: 480px)
+{
+    .about .about-container .about-title
+    {
+        font-size: 4rem;
+    }
 }
 
 </style>

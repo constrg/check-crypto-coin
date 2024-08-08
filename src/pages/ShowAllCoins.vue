@@ -41,6 +41,7 @@ const hasResults = computed(() => filteredCoins.value.length > 0);
 <style>
 .show-all-coins
 {
+    min-height: 100vh;
     padding-block: 20px 80px;
 }
 

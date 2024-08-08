@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 const props = defineProps({
     coins: {
         type: Array,
@@ -22,7 +21,7 @@ const props = defineProps({
                     </tr>
             </thead>
             <tbody class="tbody">
-                <tr class="tr" v-for="coin in props.coins" :key="coin.id" v-if="!loading">
+                <tr class="tr" v-for="coin in props.coins" :key="coin.id">
                     <td class="td">{{ coin.market_cap_rank }}</td>
                     <td class="td coin-container">
                         <img class="coin-image" :src="coin.image" alt="coin-image">
